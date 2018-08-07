@@ -1,0 +1,17 @@
+{
+    "name": "fformula/bf",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jevgenij Volosatov",
+            "email": "fformula@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+	"psr-4": {
+	    "FFormula\\": "src"
+	}
+    }
+
+}
