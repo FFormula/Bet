@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use FFormula\BF\Bet;
+use FFormula\Command\BetCommand;
+
+require __DIR__ . '/vendor/autoload.php';
+
+$key = "Z7mFmHbjT4TjDsp7";
+$sid = "bJf7eRB0D7cQG3h4HQ/xzago4zS9IW2P1hkQeAdTXLk=";
+
+$bet = new Bet ($key, $sid);
+$cmd = new BetCommand($bet);
+
+$app = new Application();
+$app -> add($cmd);
+$app -> run();
+
+//echo $bet -> getAllEventTypes(2);
